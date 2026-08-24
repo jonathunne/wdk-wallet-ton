@@ -291,7 +291,7 @@ describe('WalletAccountTon', () => {
 
       const transactionCount = blockchain.transactions.length
 
-      await expect(account.sendTransaction(TRANSACTION)).rejects.toThrow()
+      await expect(account.sendTransaction(TRANSACTION)).rejects.toThrow(/out of bounds/)
 
       expect(blockchain.transactions).toHaveLength(transactionCount)
     })
