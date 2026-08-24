@@ -70,7 +70,7 @@ const TON_CENTER_V3_URL = 'https://toncenter.com/api/v3'
 
 const SECRET_KEY_NULL = Buffer.alloc(64)
 
-const BOC_MAGICS = [0xb5ee9c72, 0x68ff65f3]
+const BOC_MAGICS = [0xb5ee9c72, 0x68ff65f3, 0xacc3a728]
 
 export default class WalletAccountReadOnlyTon extends WalletAccountReadOnly {
   /**
